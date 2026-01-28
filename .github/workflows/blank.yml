@@ -20,6 +20,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Show event trigger
+        run: echo "Triggered by ${{ github.event_name }}"
       - uses: actions/checkout@v1
-        with:
-          MY_NAME: "Bhargav"
